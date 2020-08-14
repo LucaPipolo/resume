@@ -1,0 +1,60 @@
+/**
+ * Global typography settings.
+ *
+ * 1. The font-family is set using Tpography.js. See ./src/utils/typography.js.
+ */
+
+html {
+  /* [1] */
+  font-size: 16px;
+  font-range: 420px 1280px; /* stylelint-disable-line property-no-unknown */
+}
+
+/* Headings. */
+/* stylelint-disable selector-list-comma-newline-after */
+h1,
+.h1,
+h2,
+.h2 {
+  font-weight: 700;
+}
+/* stylelint-enable selector-list-comma-newline-after */
+
+h1,
+.h1 {
+  font-size: responsive 42px 60px;
+}
+
+h2,
+.h2 {
+  font-size: responsive 30px 40px;
+}
+
+h3,
+.h3 {
+  display: inline;
+  padding-right: 0.625rem;
+  font-size: 20px;
+  text-transform: uppercase;
+  background: linear-gradient(180deg, transparent 45%, var(--color-accent) 45%);
+  font-weight: 500;
+}
+
+h4,
+.h4 {
+  font-size: 14px;
+  font-weight: 300;
+}
+
+/* Paragraphs. */
+p {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.intro {
+  font-size: responsive 22px 30px;
+  font-weight: 300;
+}

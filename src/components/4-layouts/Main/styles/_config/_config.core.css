@@ -1,0 +1,17 @@
+/**
+ * Global settings.
+ */
+
+/* Colours */
+:root {
+  --color-white: #fff;
+  --color-off-white: #f7f7f7;
+  --color-accent: #f7eb89;
+  --color-primary: #000;
+}
+
+/* Media Queries */
+@custom-media --s-viewport (min-width: 576px);
+@custom-media --m-viewport (min-width: 768px);
+@custom-media --l-viewport (min-width: 992px);
+@custom-media --xl-viewport (min-width: 1200px);

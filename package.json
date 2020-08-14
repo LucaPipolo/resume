@@ -1,0 +1,96 @@
+{
+  "name": "resume",
+  "version": "0.1.0",
+  "description": "Luca Pipolo professional resume.",
+  "author": {
+    "name": "Luca Pipolo",
+    "email": "dev@lucapipolo.com"
+  },
+  "homepage": "https://lucapipolo.com",
+  "license": "GPL-3.0",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:LucaPipolo/resume.git"
+  },
+  "bugs": {
+    "email": "bugs@lucapipolo.com",
+    "url": "https://github.com/LucaPipolo/resume/issues"
+  },
+  "private": true,
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "test": "npx jest",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
+  },
+  "dependencies": {
+    "cssnano": "^4.1.10",
+    "gatsby": "^2.24.41",
+    "gatsby-plugin-manifest": "^2.4.23",
+    "gatsby-plugin-postcss": "^2.3.11",
+    "gatsby-plugin-react-helmet": "^3.3.10",
+    "gatsby-plugin-typography": "^2.5.10",
+    "postcss-custom-media": "^7.0.8",
+    "postcss-import": "^12.0.1",
+    "postcss-preset-env": "^6.7.0",
+    "postcss-responsive-type": "^1.0.0",
+    "precss": "^4.0.0",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-helmet": "^6.1.0",
+    "react-typography": "^0.16.19",
+    "typography": "^0.16.19"
+  },
+  "devDependencies": {
+    "@storybook/addon-a11y": "^6.0.7",
+    "@storybook/addon-docs": "^6.0.7",
+    "@storybook/addon-knobs": "^6.0.7",
+    "@storybook/addon-viewport": "^6.0.7",
+    "@storybook/addons": "^6.0.7",
+    "@storybook/preset-create-react-app": "^3.1.4",
+    "@storybook/react": "^6.0.7",
+    "@testing-library/jest-dom": "^5.11.3",
+    "@testing-library/react": "^10.4.8",
+    "eslint": "^7.6.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "husky": "^4.2.5",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^26.4.0",
+    "lint-staged": "^10.2.11",
+    "prettier": "^2.0.5",
+    "pretty-quick": "^2.0.1",
+    "storybook-css-modules-preset": "^1.0.2",
+    "stylelint": "^13.6.1",
+    "stylelint-order": "^4.1.0",
+    "stylelint-scss": "^3.18.0"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/components/**/*.{js,jsx}",
+      "!src/components/**/*.stories.{js,jsx}",
+      "!src/index.js",
+      "!src/registerServiceWorker.js"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "src/**/*.{tsx,ts,jsx,js}": [
+      "pretty-quick — staged"
+    ],
+    "src/**/*.css": [
+      "stylelint --fix"
+    ]
+  }
+}
