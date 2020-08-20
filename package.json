@@ -26,7 +26,8 @@
     "clean": "gatsby clean",
     "test": "npx jest",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "snapshot": "build-storybook && percy-storybook --widths=414,1440"
   },
   "dependencies": {
     "cssnano": "^4.1.10",
@@ -47,6 +48,7 @@
     "typography": "^0.16.19"
   },
   "devDependencies": {
+    "@percy/storybook": "^3.3.1",
     "@storybook/addon-a11y": "^6.0.7",
     "@storybook/addon-docs": "^6.0.7",
     "@storybook/addon-knobs": "^6.0.7",

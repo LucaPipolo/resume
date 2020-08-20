@@ -19,3 +19,7 @@ jobs:
       run: yarn test --coverage --watchAll=false --passWithNoTests
     - name: Push code coverage to Codecov...
       run: bash <(curl -s https://codecov.io/bash) -t "$CODECOV_TOKEN"
+    - name: Push snapshot to Percy...
+      uses: percy/storybook-action@v0.1.2
+      env:
+        PERCY_TOKEN: ${{ secrets.PERCY_TOKEN }}
