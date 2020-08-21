@@ -29,7 +29,7 @@
 <hr>
 <br>
 
-![GitHub](https://img.shields.io/github/license/LucaPipolo/resume?color=6AAAE9&style=for-the-badge)
+![GitHub](https://img.shields.io/github/license/LucaPipolo/resume?color=6AAAE9&style=for-the-badge) [![Build Status](https://img.shields.io/endpoint.svg?url=https%3A%2F%2Factions-badge.atrox.dev%2FLucaPipolo%2Fresume%2Fbadge%3Fref%3Dmain&style=for-the-badge&label=build&color=B8DD44)](https://actions-badge.atrox.dev/LucaPipolo/resume/goto?ref=main) ![Codecov](https://img.shields.io/codecov/c/github/LucaPipolo/resume?color=52D6C3&style=for-the-badge) ![Percy](https://img.shields.io/static/v1?label=visual%20testing&message=percy&style=for-the-badge&color=C487EB)
 
 ## :rocket: Roadmap
 

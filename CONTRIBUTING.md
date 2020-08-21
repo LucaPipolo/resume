@@ -14,6 +14,7 @@ The following is a set of guidelines for contributing to **R E S U M E** project
   - [Git Commits](https://github.com/LucaPipolo/resume/blob/master/CONTRIBUTING.md#git-commits)
   - [Issues and Pull Requests Labels](https://github.com/LucaPipolo/resume/blob/master/CONTRIBUTING.md#issues-and-pull-requests-labels)
   - [Tests](https://github.com/LucaPipolo/resume/blob/master/CONTRIBUTING.md#tests)
+  - [GitHub Actions](https://github.com/LucaPipolo/resume/blob/master/CONTRIBUTING.md#github-actions)
   - [JavaScript and React Guidelines](https://github.com/LucaPipolo/resume/blob/master/CONTRIBUTING.md#javascript-and-react-guidelines)
   - [Sass Guidelines](https://github.com/LucaPipolo/resume/blob/master/CONTRIBUTING.md#sass-guidelines)
 
@@ -111,6 +112,12 @@ Here some suggestions about how to write good tests:
 - **Always remind that tests are for users.** Our users are the website visitors and the developers working on the source code. Tests needs to be useful for at least one of the two groups. For example, you might check if component props are correctly received or if the component works as the website visitor expect.
 - **Do not rely on small markup pieces for testing your component.** We do not want our test to fail for small markup changes. For example, if your component is outputting some data, we do not really care if this is wrapped into an `h1` or a `span` element. What matters for our users, is that the data is displayed.
 - After previous point, it might sounds redundant to you but it's super important: please, **only test things that matter**. Write and maintain tests is a time consuming operation. We want to spend this time when tests are really useful!
+
+### GitHub Actions
+
+- **Test** • Runs on every Pull Request opened against `master` branch. It executes `yarn test` and `yarn test --coverage` to push coverage results to [Codecov.io](https://codecov.io/).
+- **Stage** • Deploys latest `master` status branch to Heroku stage environment. It's automatically executed every time `master` branch is updated.
+- **Deploy** • Deploys latest published GitHub release to Heroku production environment.
 
 ### JavaScript and React Guidelines
 

@@ -1,0 +1,8 @@
+== Changelog ==
+
+= 0.1.0 - 2020-08-21 =
+* Added GitHub action workflow to deploy on stage system.
+* Added visual regression test with Percy.
+* Added GitHub action job to automatically push code coverage to Codecov.
+* Added automated tests GitHub action.
+* Bootstrapped basic Gatsby + PostCSS + Storybook + Jest application.
