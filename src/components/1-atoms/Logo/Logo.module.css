@@ -1,0 +1,25 @@
+/**
+ * Logo component style.
+ */
+
+:root {
+  --logo-width: 40px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: var(--logo-width);
+  height: var(--logo-width);
+  border-radius: 50%;
+  background-color: var(--color-primary);
+
+  &Brand {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    font-size: calc(var(--logo-width) / 3);
+    font-weight: 900;
+  }
+}
