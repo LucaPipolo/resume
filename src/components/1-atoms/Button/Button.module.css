@@ -1,0 +1,68 @@
+/**
+ * Button component style.
+ */
+
+:root {
+  --button-bg-transition: background-color 200ms linear;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  font-size: 1rem;
+  font-weight: 700;
+  text-decoration: none;
+  color: var(--color-primary);
+
+  &:hover {
+    color: var(--color-white);
+  }
+
+  .buttonIcon {
+    margin-left: 0.625em;
+  }
+
+  &Primary,
+  &Hollow {
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    padding: 0.125em 0.75em;
+    text-align: center;
+
+    @media (--m-viewport) {
+      padding: 0.75em 1em;
+    }
+  }
+
+  &Primary {
+    color: #fff;
+    background-color: var(--color-primary);
+    transition: var(--button-bg-transition);
+
+    &:hover {
+      background-color: rgba(#000, 0.8);
+      transition: var(--button-bg-transition);
+    }
+  }
+
+  &Hollow {
+    border: solid 1px var(--color-primary);
+    background-color: #fff;
+  }
+
+  &Link {
+    .buttonIcon {
+      height: 1.25rem;
+      margin-right: 0.625rem;
+      margin-left: 0;
+    }
+  }
+
+  &Hollow,
+  &Link {
+    &:hover {
+      color: var(--color-primary);
+    }
+  }
+}

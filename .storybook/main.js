@@ -30,6 +30,7 @@ module.exports = {
           require('postcss-import'),
           require('postcss-custom-media'),
           require('postcss-responsive-type'),
+          require('postcss-hexrgba'),
         ],
       },
       include: path.resolve(__dirname, '../'),

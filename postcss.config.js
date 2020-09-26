@@ -4,6 +4,7 @@ const cssnano = require(`cssnano`);
 const postcssImport = require(`postcss-import`);
 const postcssCustomMedia = require(`postcss-custom-media`);
 const postcssResponsiveType = require(`postcss-responsive-type`);
+const postcssHexRgba = require(`postcss-hexrgba`);
 
 module.exports = () => ({
   plugins: [
@@ -15,5 +16,6 @@ module.exports = () => ({
     postcssImport,
     postcssCustomMedia,
     postcssResponsiveType,
+    postcssHexRgba,
   ],
 });

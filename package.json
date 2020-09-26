@@ -37,6 +37,7 @@
     "gatsby-plugin-react-helmet": "^3.3.10",
     "gatsby-plugin-typography": "^2.5.10",
     "postcss-custom-media": "^7.0.8",
+    "postcss-hexrgba": "^2.0.1",
     "postcss-import": "^12.0.1",
     "postcss-preset-env": "^6.7.0",
     "postcss-responsive-type": "^1.0.0",
