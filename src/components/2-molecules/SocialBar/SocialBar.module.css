@@ -3,15 +3,22 @@
  */
 
 .socialBar {
-  display: flex;
+  display: grid;
+  align-items: flex-start;
+  grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+  row-gap: 0.3em;
+
+  @media (--m-viewport) {
+    column-gap: 1em;
+  }
+
+  @media (--l-viewport) {
+    column-gap: 1.25em;
+  }
 }
 
 .socialBar__Element {
   display: flex;
   align-items: center;
   font-weight: 300;
-
-  &:not(:last-of-type) {
-    margin-right: 4.375em;
-  }
 }

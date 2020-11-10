@@ -1,0 +1,21 @@
+/**
+ * Footer component style.
+ */
+
+.footer {
+  padding: 1.66em 0;
+  background-color: var(--color-accent);
+
+  @media (--s-viewport) {
+    padding: 3.75em 0;
+  }
+}
+
+.socialBar {
+  margin: 100px;
+}
+
+.copyright {
+  margin-top: 2.3em;
+  font-size: 0.75rem;
+}
