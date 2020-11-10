@@ -10,4 +10,13 @@ window.___navigate = (pathname) => {
   action('NavigateTo:')(pathname);
 };
 
+export const parameters = {
+  a11y: {
+    element: '#root',
+    config: {},
+    options: {},
+    manual: true,
+  },
+};
+
 typography.injectStyles();

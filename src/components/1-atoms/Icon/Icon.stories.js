@@ -1,7 +1,6 @@
 import React from 'react';
 
 import { withKnobs, select, number, color } from '@storybook/addon-knobs';
-import { withA11y } from '@storybook/addon-a11y';
 
 import { iconsKnobsList } from './Icons.js';
 
@@ -16,7 +15,7 @@ export default {
   parameters: {
     componentSubtitle: 'Basic SVG icon component.',
   },
-  decorators: [withKnobs, withA11y],
+  decorators: [withKnobs],
 };
 
 /**
