@@ -7,7 +7,7 @@
     "email": "dev@lucapipolo.com"
   },
   "homepage": "https://lucapipolo.com",
-  "license": "GPL-3.0",
+  "license": "0BSD",
   "repository": {
     "type": "git",
     "url": "git@github.com:LucaPipolo/resume.git"
